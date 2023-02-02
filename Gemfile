@@ -14,6 +14,7 @@ gem 'bootsnap',   '1.10.3', require: false
 group :development, :test do
   gem 'sqlite3', '1.4.2'
   gem 'byebug',  '11.0.1', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'benchmark-ips'
 end
 
 group :development do
