@@ -17,14 +17,12 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
    test "should get about" do
     get static_pages_about_url
     assert_response :success
-         assert_select "title", "About|Ruby on Rails Tutorial Sample App"
+    assert_select "title", "About|Ruby on Rails Tutorial Sample App"
   end
  
- #正しく"layouts/shim"が表示されているか
-  test "should get _shim" do
-    get static_pages_about_url
+  test "should get contact" do
+    get static_pages_contact_url
     assert_response :success
-         assert_select "title", "About|Ruby on Rails Tutorial Sample App"
-  end
-
+    assert_select "title", "Contact|Ruby on Rails Tutorial Sample App"
+end 
 end
