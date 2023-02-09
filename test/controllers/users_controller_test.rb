@@ -6,4 +6,8 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+  test "show users" do 
+    get users/id
+  end 
+
 end
